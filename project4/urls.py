@@ -23,6 +23,6 @@ urlpatterns = [
     path('', include('videos.urls')),
 ]
 
-# 開発環境時のみ、Djangoアプリケーション側でメディアファイルを配信する
+# 開発環境時のみ、Djangoアプリケーション側でメディアファイルを配信した
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
